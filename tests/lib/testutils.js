@@ -169,7 +169,7 @@ exports.initCodeProcessor = function (logger) {
 	CodeProcessor.init(undefined, {
 		exactMode: true
 	}, [{
-		path: path.resolve(path.join('..', '..', 'plugins', 'common-globals')),
+		path: path.resolve(path.join(__dirname, '..', '..', 'plugins', 'common-globals')),
 		options: {}
 	}], testLibAST);
 	Runtime._unknown = false;
